@@ -1,0 +1,111 @@
+
+# Humanloop _Data Debugger_ Challenge 
+
+This is a full-stack engineering exercise that will give you some insight into the
+types of things we are building at Humanloop.
+ 
+At Humanloop we want to make programming computers as natural as teaching a colleague
+ so that anyone can collaborate with AI to achieve their goals.
+ 
+An initial step towards this goal is creating tools for
+programming a system by simply providing carefully curated data. And an essential
+feature of any reliable programming environment is the debugger...
+   
+One of the most common challenges in the lifecycle of a Machine Learning
+project is trying to improve the performance of an existing trained model. An
+ important route to tackling this is to try and understand
+where in the data the model is under-performing. 
+      
+The ability to diagnose which data points the model is struggling with can provide a
+ host of benefits. For example it can expose issues with the original training data (e.g
+  labelling mistakes). It can also inform strategies for what additional types of
+   data might be most useful to spend time collecting. This knowledge, coupled with
+    techniques like [active learning](https://humanloop.com/blog/why-you-should-be-using-active-learning/),
+can help to rapidly enhance the performance of a model through additional targeted
+ training.
+ 
+**For this exercise we would like you to build a small application that
+ helps a user debug the data associated to a classifier model trained using the
+  [Humanloop Platform](https://humanloop.com/signup).**
+  
+## Background
+
+A IOT company have used Humanloop to create a simple chat-bot
+intent classifier. Their team of in-house client servicing experts trained the
+ model by annotating a proportion of the available data on the Humanloop Platform.
+ 
+Their data team now wish to debug the data to understand the
+quality of the annotation process and interrogate the model to understand it's
+strengths and weaknesses - all to help inform what the next steps for improving
+upon it might be.
+
+**You have access to:**
+
+1. An API to get batch predictions and associated confidence scores
+ from the classifier.
+2. An export of the full dataset utilized, including the training, validation and test sets.
+ 
+## Requirements
+
+The basics of your app should:
+
+- Store the dataset in a suitable database of your choice.
+- Provide a debugger service that operates on the data.
+- Serve a _very simple_ user interface for users to get value from the
+ debugger. 
+ 
+Please create and share with us a github repository with your solution and provide clear
+ instructions for how to run your application locally.
+
+  
+### Dataset 
+The dataset is included as a json file (_chatbot_intent_classifier_data.json.zip_
+) in this directory.
+
+The _complete_ field indicates whether an annotation has been
+provided and the _usage_ field indicates whether the annotated data point was
+used for training, testing or validation purposes. 
+  
+We also provide an active learning _score_ field as a bonus.
+
+### Prediction API 
+
+You can leverage the [prediction api](https://humanloop.com/docs#operation/create_prediction_projects__id__predict_post) 
+from the intent classifier project: 
+
+    X-API-KEY: fe20f8db14ca9cec47e9b1c9d982da9f
+
+Snippet:
+    
+    curl -H "X-API-Key: fe20f8db14ca9cec47e9b1c9d982da9f" \
+    -H "Content-Type: application/json" \
+    -d '{"data":[{"text": "What is my new credit limit?"}], "n_best":1}' \
+    -X POST https://api.humanloop.com/projects/411/predict
+
+You should limit batch sizes to 20 data points at a time and can use this to enrich
+ the data.
+
+## Guidelines 
+
+- Ideally we'd like you to spend around 4 hours working on this, so keep things simple.
+ Please let us know how much time you do end up spending so we can calibrate
+  expectations. 
+ 
+- You are free to use any languages and libraries you want. 
+ 
+ - Given the indicated time-frame, we don't expect you to spend much time in this
+  exercise on 'non-functional' aspects such as authentication, testing, performance
+  , deployment or documentation. We are most interested in what useful debugging
+   functionality you are able to ship here and expect a prototypical solution - although
+    we do care a lot about code quality and style!
+ 
+- We are hoping to see creativity and deep ML knowledge for the debugging
+ approach. A hint example: provide a view of the data to the user where the model most
+  confidently disagrees with the annotations provided - what might this uncover? 
+
+- Although the UI is not the focus of this exercise, we do care a lot
+ about UX across all aspects of product at Humanloop and are very interested in ways
+  to communicate potentially complex data in intuitive user friendly ways.
+
+
+Any questions, please let us know! careers@humanloop.com

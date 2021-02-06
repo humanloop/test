@@ -98,8 +98,9 @@ You should limit batch sizes to 20 data points at a time and can use this to enr
    functionality you are able to ship here and expect a prototypical solution - although
     we do care a lot about code quality and style!
  
-- We are hoping to see creativity and ML knowledge for the debugging
- approach. For example: providing a view of the data to the user where the model most
+- Whilst We are hoping to see creativity and ML knowledge for the debugging
+ approach, Its much more important that you deliver some small piece of functionality that
+ works. ML knowledge and creativity are a bonus. An example feature could be: providing a view of the data to the user where the model most
   confidently disagrees with the annotations provided - what might this uncover? 
 
 - Although the UI is not the focus of this exercise, we do care a lot

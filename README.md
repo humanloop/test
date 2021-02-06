@@ -30,20 +30,20 @@ can help to rapidly enhance the performance of a model through additional target
   
 ## Background
 
-A IOT company have used Humanloop to create a simple chat-bot
+A IoT company have used Humanloop to create a simple chat-bot
 intent classifier. Their team of in-house client servicing experts trained the
  model by annotating a proportion of the available data on the Humanloop Platform.
  
 Their data team now wish to debug the data to understand the
-quality of the annotation process and interrogate the model to understand it's
-strengths and weaknesses - all to help inform what the next steps for improving
-upon it might be.
+quality of the annotation process and interrogate the model's
+strengths and weaknesses. This will be used to help inform what the next steps for improving
+the data might be.
 
 **You have access to:**
 
 1. An API to get batch predictions and associated confidence scores
  from the classifier.
-2. An export of the full dataset utilized, including the training, validation and test sets.
+2. An export of the full dataset used – broken down into the training, validation and test sets.
  
 ## Requirements
 
@@ -59,14 +59,13 @@ Please create and share with us a github repository with your solution and provi
 
   
 ### Dataset 
-The dataset is included as a json file (_chatbot_intent_classifier_data.json.zip_
-) in this directory.
+The dataset is included as a json file (_chatbot_intent_classifier_data.json.zip_) in this directory.
 
-The _complete_ field indicates whether an annotation has been
-provided and the _usage_ field indicates whether the annotated data point was
+The `complete` field indicates whether an annotation has been
+provided and the `usage` field indicates whether the annotated data point was
 used for training, testing or validation purposes. 
   
-We also provide an active learning _score_ field as a bonus.
+We also provide an active learning `score` field as a bonus. This is the [entropy](https://en.wikipedia.org/wiki/Entropy_(information_theory)) of the softmax classification output of the model –– which can be used as an estimate for how confused the model is with that datapoint.
 
 ### Prediction API 
 
@@ -93,14 +92,14 @@ You should limit batch sizes to 20 data points at a time and can use this to enr
  
 - You are free to use any languages and libraries you want. 
  
- - Given the indicated time-frame, we don't expect you to spend much time in this
+- Given the indicated time-frame, we don't expect you to spend much time in this
   exercise on 'non-functional' aspects such as authentication, testing, performance
   , deployment or documentation. We are most interested in what useful debugging
    functionality you are able to ship here and expect a prototypical solution - although
     we do care a lot about code quality and style!
  
-- We are hoping to see creativity and deep ML knowledge for the debugging
- approach. A hint example: provide a view of the data to the user where the model most
+- We are hoping to see creativity and ML knowledge for the debugging
+ approach. For example: providing a view of the data to the user where the model most
   confidently disagrees with the annotations provided - what might this uncover? 
 
 - Although the UI is not the focus of this exercise, we do care a lot

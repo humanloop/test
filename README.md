@@ -84,9 +84,8 @@ Snippet:
 
 You should limit batch sizes to 20 data points at a time and can use this to enrich
  the data.
-
-## Guidelines for Full-Stack Engineers 
-
+ 
+## Guidelines
 - Ideally we'd like you to spend around 4 hours working on this, so keep things simple.
  Please let us know how much time you do end up spending so we can calibrate
   expectations. 
@@ -94,13 +93,12 @@ You should limit batch sizes to 20 data points at a time and can use this to enr
 - You are free to use any languages and libraries you want. 
  
 - Given the indicated time-frame, we don't expect you to spend much time in this
-  exercise on 'non-functional' aspects such as authentication, testing, performance
-  , deployment or documentation. We are most interested in what useful debugging
-   functionality you are able to ship here and expect a prototypical solution - although
-    we do care a lot about code quality and style!
- 
-- Whilst We are hoping to see creativity and ML knowledge for the debugging
- approach, Its much more important that you deliver some small piece of functionality that
+  exercise on 'non-functional' aspects such as authentication, testing, performance, deployment or documentation. We are most interested in what useful debugging functionality you are able to ship here and expect a prototypical solution - although we do care a lot about code quality and style!
+
+### For Full-Stack Engineers 
+
+- Whilst we are hoping to see creativity and ML knowledge for the debugging
+ approach, it is far more important that you deliver some small piece of functionality that
  works. ML knowledge and creativity are a bonus. An example feature could be: providing a view of the data to the user where the model most
   confidently disagrees with the annotations provided - what might this uncover? 
 
@@ -108,19 +106,9 @@ You should limit batch sizes to 20 data points at a time and can use this to enr
  about UX across all aspects of product at Humanloop and are very interested in ways
   to communicate potentially complex data in intuitive user friendly ways.
 
-## Guidelines for ML Engineers
-
-- Ideally we'd like you to spend around 4 hours working on this, so keep things simple.
- Please let us know how much time you do end up spending so we can calibrate
-  expectations. 
-
-- Given the indicated time-frame, we don't expect you to spend much time in this
-  exercise on 'non-functional' aspects such as authentication, testing, performance
-  ,deployment or documentation. We are most interested in what useful debugging
-   functionality you are able to ship here and expect a prototypical solution - although
-    we do care a lot about code quality and style!
+### For ML Engineers
     
-- Unlike the full-stack version of this test, We're much more interested in your creativity
+- Unlike the full-stack guidlines, we're far more interested in your creativity
 and ML knowledge. It's less important that you are able to code a fully functional app, and more important
 that you can leverage what you know of ML to help the end user improve their model or data. 
 For example, could you make use of pre-trained models or embeddings? What visualisation or clustering techniques

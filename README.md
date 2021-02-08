@@ -108,7 +108,7 @@ You should limit batch sizes to 20 data points at a time and can use this to enr
 
 ### For ML Engineers
     
-- Unlike the full-stack guidlines, we're far more interested in your creativity
+- Unlike the full-stack guidelines, we're far more interested in your creativity
 and ML knowledge. It's less important that you are able to code a fully functional app, and more important
 that you can leverage what you know of ML to help the end user improve their model or data. 
 For example, could you make use of pre-trained models or embeddings? What visualisation or clustering techniques

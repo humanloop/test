@@ -1,8 +1,9 @@
 
 # Humanloop _Data Debugger_ Challenge 
 
-This is a full-stack engineering exercise that will give you some insight into the
-types of things we are building at Humanloop.
+This is an engineering exercise that will give you some insight into the
+types of things we are building at Humanloop. We use the same test for ML engineers
+and full-stack engineers but the guidelines and evaluation differ slightly.
  
 At Humanloop we want to make programming computers as natural as teaching a colleague
  so that anyone can collaborate with AI to achieve their goals.
@@ -30,7 +31,7 @@ can help to rapidly enhance the performance of a model through additional target
   
 ## Background
 
-A IoT company have used Humanloop to create a simple chat-bot
+An IoT company have used Humanloop to create a simple chat-bot
 intent classifier. Their team of in-house client servicing experts trained the
  model by annotating a proportion of the available data on the Humanloop Platform.
  
@@ -84,7 +85,7 @@ Snippet:
 You should limit batch sizes to 20 data points at a time and can use this to enrich
  the data.
 
-## Guidelines 
+## Guidelines for Full-Stack Engineers 
 
 - Ideally we'd like you to spend around 4 hours working on this, so keep things simple.
  Please let us know how much time you do end up spending so we can calibrate
@@ -107,5 +108,23 @@ You should limit batch sizes to 20 data points at a time and can use this to enr
  about UX across all aspects of product at Humanloop and are very interested in ways
   to communicate potentially complex data in intuitive user friendly ways.
 
+## Guidelines for ML Engineers
 
+- Ideally we'd like you to spend around 4 hours working on this, so keep things simple.
+ Please let us know how much time you do end up spending so we can calibrate
+  expectations. 
+
+- Given the indicated time-frame, we don't expect you to spend much time in this
+  exercise on 'non-functional' aspects such as authentication, testing, performance
+  ,deployment or documentation. We are most interested in what useful debugging
+   functionality you are able to ship here and expect a prototypical solution - although
+    we do care a lot about code quality and style!
+    
+- Unlike the full-stack version of this test, We're much more interested in your creativity
+and ML knowledge. It's less important that you are able to code a fully functional app, and more important
+that you can leverage what you know of ML to help the end user improve their model or data. 
+For example, could you make use of pre-trained models or embeddings? What visualisation or clustering techniques
+might help? There's no right answer here, so feel free to be creative.
+  
+  
 Any questions, please let us know! careers@humanloop.com

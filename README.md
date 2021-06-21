@@ -73,14 +73,14 @@ We also provide an active learning `score` field as a bonus. This is the [entrop
 You can leverage the [prediction api](https://humanloop.com/docs#operation/create_prediction_projects__id__predict_post) 
 from the intent classifier project: 
 
-    X-API-KEY: fe20f8db14ca9cec47e9b1c9d982da9f
+    X-API-KEY: sk_63f406a2690ccd01a3234492e2e99996
 
 Snippet:
     
-    curl -H "X-API-Key: fe20f8db14ca9cec47e9b1c9d982da9f" \
+    curl -H "X-API-Key: sk_63f406a2690ccd01a3234492e2e99996" \
     -H "Content-Type: application/json" \
     -d '{"data":[{"text": "What is my new credit limit?"}], "n_best":1}' \
-    -X POST https://api.humanloop.com/projects/411/predict
+    -X POST https://api.humanloop.com/projects/716/predict
 
 You should limit batch sizes to 20 data points at a time and can use this to enrich
  the data.

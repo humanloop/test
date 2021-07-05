@@ -52,7 +52,7 @@ The basics of your app should:
 
 - Store the dataset in a suitable database of your choice.
 - Provide a debugger service that operates on the data.
-- Serve a _very simple_ user interface for users to get value from the
+- Serve a simple user interface for users to get value from the
  debugger. 
  
 Please create and share with us a github repository with your solution and provide clear

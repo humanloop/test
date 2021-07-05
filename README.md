@@ -31,7 +31,7 @@ can help to rapidly enhance the performance of a model through additional target
   
 ## Background
 
-An IoT company have used Humanloop to create a simple chat-bot
+A company have used Humanloop to create a simple chat-bot
 intent classifier. Their team of in-house client servicing experts trained the
  model by annotating a proportion of the available data on the Humanloop Platform.
  
